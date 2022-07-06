@@ -1,0 +1,15 @@
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\bin\Debug\net6.0\BetterBooking.exe
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\bin\Debug\net6.0\BetterBooking.deps.json
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\bin\Debug\net6.0\BetterBooking.runtimeconfig.json
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\bin\Debug\net6.0\BetterBooking.dll
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\bin\Debug\net6.0\BetterBooking.pdb
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.csproj.AssemblyReference.cache
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.AssemblyInfoInputs.cache
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.AssemblyInfo.cs
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.csproj.CoreCompileInputs.cache
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.dll
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\refint\BetterBooking.dll
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.pdb
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\BetterBooking.genruntimeconfig.cache
+C:\Users\Dymek\source\repos\BetterBooking\BetterBooking\obj\Debug\net6.0\ref\BetterBooking.dll
