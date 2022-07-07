@@ -21,8 +21,6 @@ namespace BetterBooking
         public void AddItem()
         { }
         public void RemoveItem()
-        {
-
-        }
+        { }
     }
 }

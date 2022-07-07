@@ -42,7 +42,7 @@ namespace BetterBooking
                     Console.WriteLine("zamkniujsda sdsa");
                 }
 
-            } else if (choice == 2)
+            }else if (choice == 2)
                     {
                 Console.WriteLine("1. Lokalizacja \n2. Standard - VIP, Standard, Biedak \n3. Cena \n4. Pokoje \n5. Dostępność w czasie");
                 choice = int.Parse(Console.ReadLine());
