@@ -16,7 +16,7 @@ namespace BetterBooking
 
             Console.WriteLine($"Wybrałeś opcje: {choice}");
 
-            ItemService itemService = new ItemService();
+           // ItemService itemService = new ItemService();
 
             if (choice == 1)
             {
@@ -26,7 +26,7 @@ namespace BetterBooking
                 {
                     Console.WriteLine("Wybrałeś: Dodaj hotel");
                     // Owners owners = new Owners() { Id = 1, Name = "Hotel JEDEN"};
-                    itemService.AddItem();
+                   // itemService.AddItem();
                 }
                 else if (choice == 2)
                 {
@@ -35,7 +35,7 @@ namespace BetterBooking
                 else if(choice == 3)
                 {
                     Console.WriteLine("Wybrałeś: Usuń hotel");
-                    itemService.RemoveItem();
+                  //  itemService.RemoveItem();
                 }
                 else
                 {
