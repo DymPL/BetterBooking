@@ -12,11 +12,11 @@ namespace BetterBooking
 
         public decimal Price { get; set; }
 
-        public DateTime dateAvailable { get; set; }
+     //   public DateTime dateAvailable { get; set; }
 
-        public int Standard { get; set; }
+      //  public int Standard { get; set; }
 
-        public string Localization { get; set; }
+        //public string Localization { get; set; }
     }
 
 }

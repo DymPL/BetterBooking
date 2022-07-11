@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\drzep\\source\\BetterBooking\\BetterBooking\\BetterBooking.csproj": {}
+    "C:\\Users\\Dymek\\source\\repos\\BetterBooking\\BetterBooking\\BetterBooking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\drzep\\source\\BetterBooking\\BetterBooking\\BetterBooking.csproj": {
+    "C:\\Users\\Dymek\\source\\repos\\BetterBooking\\BetterBooking\\BetterBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\drzep\\source\\BetterBooking\\BetterBooking\\BetterBooking.csproj",
+        "projectUniqueName": "C:\\Users\\Dymek\\source\\repos\\BetterBooking\\BetterBooking\\BetterBooking.csproj",
         "projectName": "BetterBooking",
-        "projectPath": "C:\\Users\\drzep\\source\\BetterBooking\\BetterBooking\\BetterBooking.csproj",
-        "packagesPath": "C:\\Users\\drzep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drzep\\source\\BetterBooking\\BetterBooking\\obj\\",
+        "projectPath": "C:\\Users\\Dymek\\source\\repos\\BetterBooking\\BetterBooking\\BetterBooking.csproj",
+        "packagesPath": "C:\\Users\\Dymek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dymek\\source\\repos\\BetterBooking\\BetterBooking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\drzep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dymek\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
