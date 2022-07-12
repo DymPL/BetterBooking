@@ -15,6 +15,7 @@ namespace BetterBooking
             Console.WriteLine("Właściciel obiektu czy turysta?");
             Console.WriteLine("1. Właściciel obiektu");
             Console.WriteLine("2. Turysta");
+
         }
         public void AddHotel()
         {
