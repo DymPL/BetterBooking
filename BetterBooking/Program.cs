@@ -6,13 +6,11 @@ namespace BetterBooking
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Witamy na BetterBooking");
+            var menuWmenu = new Menu();
 
-            var ownerAction = new OwnerAction();
-            //ownerAction.OwnerOrSeekers();
-            ownerAction.Action();
+            menuWmenu.MenuWMenu();
+
 
         }
-
     }
 }

@@ -10,12 +10,44 @@ namespace BetterBooking
     {
         public OwnerManager OwnerManager { get; set; } = new OwnerManager();
 
-        public void OwnerOrSeekers()
+        public void OwnerHotelMenu()
         {
-            Console.WriteLine("Właściciel obiektu czy turysta?");
-            Console.WriteLine("1. Właściciel obiektu");
-            Console.WriteLine("2. Turysta");
+            Console.WriteLine("\nCo chcesz wykonać:");
 
+            int userInput = 0;
+
+            var menuWmenu = new Menu();
+
+            while (userInput != 4)
+            {
+                Console.WriteLine("1 - Dodawanie obiektu");
+                Console.WriteLine("2 - Usuwanie obiektu");
+                Console.WriteLine("3 - Wypisywanie listy obiektów");
+                Console.WriteLine("4 - Powrót");
+
+                userInput = int.Parse(Console.ReadLine());
+
+                switch (userInput)
+                {
+                    case 1:
+                        AddHotel();
+                        break;
+                    case 2:
+                        DeleteHotel();
+                        break;
+                    case 3:
+                        AllOwners();
+                        break;
+                    case 4:
+                        menuWmenu.MenuWMenu();
+                        break;
+                    default:
+                        Console.WriteLine("Podaną złą wartość");
+                        OwnerHotelMenu();
+                        break;
+
+                }
+            }
         }
         public void AddHotel()
         {
@@ -55,42 +87,7 @@ namespace BetterBooking
             }
 
         }
-        public void Action()
-        {
-            Console.WriteLine("Co chcesz wykonać:");
 
-            int userInput = 0;
-
-            while (userInput != 4)
-            {
-                Console.WriteLine("1 - Dodawanie obiektu");
-                Console.WriteLine("2 - Usuwanie obiektu");
-                Console.WriteLine("3 - Wypisywanie listy obiektów");
-                Console.WriteLine("4 - Wyjście z programu");
-
-                userInput = int.Parse(Console.ReadLine());
-
-                switch (userInput)
-                {
-                    case 1:
-                        AddHotel();
-                        break;
-                    case 2:
-                        DeleteHotel();
-                        break;
-                    case 3:
-                        AllOwners();
-                        break;
-                    case 4:
-                        Console.WriteLine("Do widzenia");
-                        break;
-                    default:
-                        Console.WriteLine("Podaną złą wartość");
-                        break;
-
-                }
-            }
-        }
 
      }
 
