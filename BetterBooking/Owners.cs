@@ -16,6 +16,8 @@ namespace BetterBooking
 
         public DateTime DateTimeDeparture { get; set; }  
 
+        public string Location { get; set; }
+
 
      //   public DateTime dateAvailable { get; set; }
 

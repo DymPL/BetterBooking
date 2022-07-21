@@ -20,7 +20,7 @@ namespace BetterBooking
 
             while (userInput != 4)
             {
-                Console.WriteLine("1 - Dodawanie obiektu");
+                Console.WriteLine("\n1 - Dodawanie obiektu");
                 Console.WriteLine("2 - Usuwanie obiektu");
                 Console.WriteLine("3 - Wypisywanie listy obiektów");
                 Console.WriteLine("4 - Powrót");
@@ -63,6 +63,9 @@ namespace BetterBooking
             Console.WriteLine("Podaj datę wyjazdu: dd.mm.rrrr ");
             DateTime dataodjazdu = DateTime.Parse(Console.ReadLine());
 
+            Console.WriteLine("Podaj lokalizacje: ");
+            var location = Console.ReadLine();
+
             var hotelPriceDecimal = default(decimal);
 
             while (!decimal.TryParse(hotelPrice, out hotelPriceDecimal))
@@ -72,7 +75,7 @@ namespace BetterBooking
 
                 hotelPrice = Console.ReadLine();
             }
-            OwnerManager.AddHotel(hotelName, hotelPriceDecimal, dataprzyjazdu, dataodjazdu);
+            OwnerManager.AddHotel(hotelName, hotelPriceDecimal, dataprzyjazdu, dataodjazdu, location);
         }
 
         public void DeleteHotel()
@@ -86,7 +89,7 @@ namespace BetterBooking
 
         public void AllOwners()
         {
-            Console.WriteLine("Lista wszyskich dodanych hoteli: ");
+            Console.WriteLine("Lista wszyskich dodanych hoteli: \n");
             foreach(var hotel in OwnerManager.AllOwners())
             {
                 Console.WriteLine(hotel);
