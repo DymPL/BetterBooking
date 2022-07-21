@@ -18,12 +18,6 @@ namespace BetterBooking
 
         public string Location { get; set; }
 
-
-     //   public DateTime dateAvailable { get; set; }
-
-      //  public int Standard { get; set; }
-
-        //public string Localization { get; set; }
     }
 
 }

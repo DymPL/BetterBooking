@@ -24,6 +24,8 @@ namespace BetterBooking
                 Console.WriteLine("2 - Usuwanie obiektu");
                 Console.WriteLine("3 - Wypisywanie listy obiektów");
                 Console.WriteLine("4 - Powrót");
+                Console.WriteLine("5 - Wyszukaj po nazwie");
+                Console.WriteLine("6 - Wyszukaj po lokalizacji");
 
                 userInput = int.Parse(Console.ReadLine());
 
@@ -40,6 +42,12 @@ namespace BetterBooking
                         break;
                     case 4:
                         menuWmenu.MenuWMenu();
+                        break;
+                    case 5:
+                        FindByName();
+                        break;
+                    case 6:
+                        FindByLocation();
                         break;
                     default:
                         Console.WriteLine("Podaną złą wartość");
@@ -96,8 +104,21 @@ namespace BetterBooking
             }
 
         }
+        public void FindByName()
+        {
+            Console.WriteLine("Jakiego hotelu szukasz: ");
+            var find = Console.ReadLine();
+            OwnerManager.FindByName(find);
+        }
+
+        public void FindByLocation()
+        {
+            Console.WriteLine("Podaj lokalizacje: ");
+            var findbylocation = Console.ReadLine();
+            OwnerManager.FindByLocation(findbylocation);
+        }
 
 
-     }
+    }
 
 }

@@ -52,5 +52,32 @@ namespace BetterBooking
 
             return ownerStrings;
         }
+
+        public void FindByName(string name)
+        {
+            foreach (var owner in Owners)
+            {
+                if (owner.Name == name)
+                {
+                    Console.WriteLine("Znaleziony: " + name + " - Cena za dobę: " + owner.Price);
+                    return;
+                }
+            }
+        }
+        public List<string> FindByLocation(string location)
+        {
+            var ownerStrings = new List<string>();
+            var count = 1;
+            foreach (var llocation in Owners)
+            {
+                
+                if (llocation.Location == location)
+                {
+                    Console.WriteLine("Hotele znalezione po lokalizacji: " + location + "\nNazwa hotelu: " + llocation.Name);
+                    count++;
+                }
+            }
+            return ownerStrings;
+        }
     }
 }
