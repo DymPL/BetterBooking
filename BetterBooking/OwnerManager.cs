@@ -15,12 +15,14 @@ namespace BetterBooking
             Owners = new List<Owners>();
         }
 
-        public void AddHotel(string name, decimal price)
+        public void AddHotel(string name, decimal price, DateTime data, DateTime data1)
         {
             var owner = new Owners
             {
                 Name = name,
                 Price = price,
+                DateTimeArrive = data,
+                DateTimeDeparture = data1,
             };
             Owners.Add(owner);
         }
@@ -41,7 +43,7 @@ namespace BetterBooking
 
             foreach (var owner in Owners) 
             {
-                var ownerString = count + ". " + owner.Name + " - " + owner.Price + " zł";
+                var ownerString = count + ". " + owner.Name + " - " + owner.Price + " zł" + " Data przyjazdu " + owner.DateTimeArrive.ToString("dd.MM.yyyy") + " Data wyjazdu: " + owner.DateTimeDeparture.ToString("dd.MM.yyyy");
                 count++;
 
                 ownerStrings.Add(ownerString);

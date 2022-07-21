@@ -57,6 +57,12 @@ namespace BetterBooking
             Console.WriteLine("Podaj kwotę za dobę:");
             var hotelPrice = Console.ReadLine();
 
+            Console.WriteLine("Podaj datę przyjazdu: dd.mm.rrrr ");
+            DateTime dataprzyjazdu = DateTime.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj datę wyjazdu: dd.mm.rrrr ");
+            DateTime dataodjazdu = DateTime.Parse(Console.ReadLine());
+
             var hotelPriceDecimal = default(decimal);
 
             while (!decimal.TryParse(hotelPrice, out hotelPriceDecimal))
@@ -66,7 +72,7 @@ namespace BetterBooking
 
                 hotelPrice = Console.ReadLine();
             }
-            OwnerManager.AddHotel(hotelName, hotelPriceDecimal);
+            OwnerManager.AddHotel(hotelName, hotelPriceDecimal, dataprzyjazdu, dataodjazdu);
         }
 
         public void DeleteHotel()

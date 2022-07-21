@@ -12,6 +12,11 @@ namespace BetterBooking
 
         public decimal Price { get; set; }
 
+        public DateTime DateTimeArrive { get; set; }
+
+        public DateTime DateTimeDeparture { get; set; }  
+
+
      //   public DateTime dateAvailable { get; set; }
 
       //  public int Standard { get; set; }
