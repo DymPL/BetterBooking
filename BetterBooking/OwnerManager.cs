@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace BetterBooking
 {
@@ -13,6 +16,8 @@ namespace BetterBooking
         public OwnerManager()
         {
             Owners = new List<Owners>();
+            string readText = File.ReadAllText("hotels.json");
+            var deserHotel = JsonSerializer.Deserialize<Owners>(readText);
         }
 
         public void AddHotel(string name, decimal price, DateTime data, DateTime data1, string location)
@@ -26,7 +31,13 @@ namespace BetterBooking
                 Location = location,
             };
             Owners.Add(owner);
+            string jsonSerializerResult = JsonSerializer.Serialize(owner);
+            //Console.WriteLine(jsonSerializerResult);
+            File.WriteAllText("hotels.json", jsonSerializerResult);
+
+
         }
+
         public void DeleteHotel(string name)
         {
             foreach (var owner in Owners) {
@@ -51,6 +62,8 @@ namespace BetterBooking
             }
 
             return ownerStrings;
+
+            
         }
 
         public void FindByName(string name)
@@ -79,5 +92,6 @@ namespace BetterBooking
             }
             return ownerStrings;
         }
+
     }
 }
