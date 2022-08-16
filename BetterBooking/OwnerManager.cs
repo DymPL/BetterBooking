@@ -17,7 +17,8 @@ namespace BetterBooking
         {
             Owners = new List<Owners>();
             string readText = File.ReadAllText("hotels.json");
-            var deserHotel = JsonSerializer.Deserialize<Owners>(readText);
+            var deserHotel = JsonSerializer.Deserialize<List<Owners>>(readText);
+            Owners.AddRange(deserHotel);
         }
 
         public void AddHotel(string name, decimal price, DateTime data, DateTime data1, string location)
@@ -31,7 +32,7 @@ namespace BetterBooking
                 Location = location,
             };
             Owners.Add(owner);
-            string jsonSerializerResult = JsonSerializer.Serialize(owner);
+            string jsonSerializerResult = JsonSerializer.Serialize(Owners);
             //Console.WriteLine(jsonSerializerResult);
             File.WriteAllText("hotels.json", jsonSerializerResult);
 

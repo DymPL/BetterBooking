@@ -1,1 +1,1 @@
-{"Name":"ADB","Price":123,"DateTimeArrive":"2020-12-12T00:00:00","DateTimeDeparture":"2021-12-12T00:00:00","Location":"OOO"}
+[{"Name":"ABCDE","Price":1234,"DateTimeArrive":"2012-12-12T00:00:00","DateTimeDeparture":"2012-12-12T00:00:00","Location":"OOO"},{"Name":"OOO","Price":333,"DateTimeArrive":"2021-12-20T00:00:00","DateTimeDeparture":"2021-12-21T00:00:00","Location":"TEST"}]
